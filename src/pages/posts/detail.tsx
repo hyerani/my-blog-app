@@ -1,3 +1,9 @@
-export default function PostDetail() {
-  return <h1>hi</h1>;
+import PostDetail from "components/PostDetail";
+
+export default function PostPage() {
+  return (
+    <>
+      <PostDetail />
+    </>
+  );
 }
