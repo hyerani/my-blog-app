@@ -14,10 +14,7 @@
     "allowJs": true, // JavaScript 파일 사용 허용
     "forceConsistentCasingInFileNames": true, // 파일명 대소문자 엄격히 구분
     "types": ["node", "react", "react-dom"], // React와 Node 타입 사용
-    "baseUrl": ".", // 기본 경로 설정
-    "paths": {
-      "@/*": ["src/*"] // 절대 경로 alias 설정
-    }
+    "baseUrl": "./src" // 기본 경로 설정
   },
   "include": [
     "src" // src 폴더 내의 모든 파일 포함
