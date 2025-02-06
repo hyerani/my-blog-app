@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // 최신 JavaScript 기능 사용
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], // 브라우저와 최신 ES 기능 지원
+    "jsx": "react-jsx", // React 19의 새로운 JSX 변환 지원
+    "module": "ESNext", // 모듈 시스템 설정
+    "moduleResolution": "Node", // Node 모듈 방식 사용
+    "strict": true, // 엄격한 타입 검사
+    "esModuleInterop": true, // CommonJS와 ES 모듈 호환
+    "skipLibCheck": true, // 라이브러리 타입 검사는 건너뜀
+    "resolveJsonModule": true, // JSON 파일 모듈 지원
+    "isolatedModules": true, // 각 파일을 개별적으로 처리
+    "noEmit": true, // 컴파일러 출력 방지 (React 앱에서는 필요 없음)
+    "allowJs": true, // JavaScript 파일 사용 허용
+    "forceConsistentCasingInFileNames": true, // 파일명 대소문자 엄격히 구분
+    "types": ["node", "react", "react-dom"], // React와 Node 타입 사용
+    "baseUrl": ".", // 기본 경로 설정
+    "paths": {
+      "@/*": ["src/*"] // 절대 경로 alias 설정
+    }
+  },
+  "include": [
+    "src" // src 폴더 내의 모든 파일 포함
+  ],
+  "exclude": [
+    "node_modules", // node_modules 제외
+    "build", // 빌드 폴더 제외
+    "dist" // 배포 폴더 제외
+  ]
+}
