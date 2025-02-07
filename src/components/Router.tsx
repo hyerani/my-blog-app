@@ -1,10 +1,10 @@
 import Home from "pages/home";
 import Login from "pages/login";
-import PostLists from "pages/posts";
-import PostPage from "pages/posts/detail";
+import PostPage from "pages/posts";
+import PostDetailPage from "pages/posts/detail";
 import PostEdit from "pages/posts/edit";
 import PostNew from "pages/posts/new";
-import Profile from "pages/profile";
+import ProfilePage from "pages/profile";
 import Signup from "pages/signup";
 import { Navigate, Route, Routes } from "react-router-dom";
 
@@ -13,11 +13,11 @@ export default function Router() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/posts" element={<PostLists />} />
-        <Route path="/posts/:id" element={<PostPage />} />
+        <Route path="/posts" element={<PostPage />} />
+        <Route path="/posts/:id" element={<PostDetailPage />} />
         <Route path="/posts/new" element={<PostNew />} />
         <Route path="/posts/edit/:id" element={<PostEdit />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/profile" element={<ProfilePage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="*" element={<Navigate replace to="/" />} />

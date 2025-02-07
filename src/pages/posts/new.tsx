@@ -1,3 +1,11 @@
+import Footer from "components/Footer";
+import Header from "components/Header";
+
 export default function PostNew() {
-  return <h1>hi</h1>;
+  return (
+    <>
+      <Header />
+      <Footer />
+    </>
+  );
 }
