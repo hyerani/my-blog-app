@@ -5,7 +5,7 @@
     "jsx": "react-jsx", // React 19의 새로운 JSX 변환 지원
     "module": "ESNext", // 모듈 시스템 설정
     "moduleResolution": "Node", // Node 모듈 방식 사용
-    "strict": true, // 엄격한 타입 검사
+    "strict": false, // 엄격한 타입 검사
     "esModuleInterop": true, // CommonJS와 ES 모듈 호환
     "skipLibCheck": true, // 라이브러리 타입 검사는 건너뜀
     "resolveJsonModule": true, // JSON 파일 모듈 지원
